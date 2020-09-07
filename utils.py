@@ -23,7 +23,7 @@ total_page = 0
 err_list = []
 
 # 확장자 리스트
-extender = {
+extensions = {
     'C': '.c',
     'C (Clang)': '.c',
     'C11': '.c',
@@ -160,7 +160,7 @@ def boj_scrapper(id, pw):
 
 
 def get_code(solved_problem, lang):
-    file = open("downloaded/" + str(solved_problem) + extender[lang], "wt")
+    file = open("downloaded/" + str(solved_problem) + extensions[lang], "wt")
     textarea = webdriver.find_element_by_tag_name("textarea").get_attribute('value')
     sys.stdout.write("코드 : " + textarea[:25] + "...\n\n")
     file.writelines(textarea)
