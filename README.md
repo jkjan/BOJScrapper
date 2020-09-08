@@ -2,8 +2,8 @@
 
 ### 사용법
 1. 크롬을 설치합니다.
-2. 설치된 크롬의 [버전을 확인]("chrome://version")합니다.
-3. 버전에 맞는 [크롬 드라이버]("https://chromedriver.chromium.org/downloads") 를 설치합니다.
+2. chrome://version 에서 크롬의 버전을 확인합니다.
+3. 버전에 맞는 [크롬 드라이버](https://chromedriver.chromium.org/downloads) 를 설치합니다.
 4. 최상단에 `downloaded` 폴더를 생성합니다.
 5. `pip install selenium-requests`로 필요한 라이브러리를 설치합니다.
 6. `driver_path.txt` 파일 생성 후, 설치된 드라이버의 절대 경로를 적습니다.
